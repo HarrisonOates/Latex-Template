@@ -1,0 +1,16 @@
+\ProvidesPackage{cleantitlepage}
+
+\newcommand{\mytitlepage}[3]
+{
+\thispagestyle{empty}
+\begin{center}
+	\setlength{\parskip}{2ex}
+    \rule{\textwidth}{.4pt}\par
+    {\huge\bfseries #1 \par}
+    {\large \bfseries #2 \par}
+    \rule{\textwidth}{.4pt}\par
+    \bigbreak
+    {\Large #3 \par}
+\end{center}
+\newpage
+}
