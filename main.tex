@@ -22,6 +22,7 @@
 \usepackage{url}
 \usepackage{microtype}
 \usepackage{listings}
+\usepackage{cleantitlepage} % Use only if cleantitlepage.sty is in folder
 
 % Bibliography
 \usepackage[round,comma, authoryear]{natbib}
@@ -34,8 +35,10 @@
 \date{1 April 2020}
 
 \begin{document}
-\maketitle
+\mytitlepage{Title}{Subtitle}{Author} % My custom titlepage command. 
 \input{section_name} % Need to create a .tex file in same folder as main to input section. Rinse and repeat as needed.
+% Otherwise type directly here
+
 
 \newpage
 \bibliography{bibliography} % Replace with the name of the .bib file.
